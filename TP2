@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Emploi du Temps - IAIL S2 (TP2)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 10px;
+            font-size: 11px;
+            color: #333;
+        }
+
+        .header-table {
+            width: 100%;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .header-table td {
+            border: none;
+            vertical-align: middle;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .logo-img {
+            max-height: 80px;
+            width: auto;
+        }
+
+        .signature-img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        .title-section h2 {
+            margin: 5px 0;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .year-info {
+            text-align: right;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        table.timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table.timetable th, table.timetable td {
+            border: 1px solid #000;
+            padding: 6px;
+            text-align: center;
+        }
+
+        table.timetable th {
+            background-color: #f0f0f0;
+        }
+
+        .day-label {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+
+        .td-tp {
+            color: red;
+            font-weight: bold;
+        }
+
+        .prof-name {
+            font-size: 10px;
+            display: block;
+            margin-top: 3px;
+        }
+
+        /* ستايل جديد للروابط باش يبانو زوينين */
+        .prof-name a {
+            color: blue;
+            text-decoration: none;
+        }
+        .prof-name a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="header-table">
+        <tr>
+            <td style="width: 20%; text-align: left;">
+                <img src="signature.jpg" alt="Signature Chef Dépt" class="signature-img">
+                <br>
+                <small>Abdelhadi BOUAIN</small>
+            </td>
+            <td style="width: 60%;" class="title-section">
+                <img src="logo.jpg" alt="Logo Université Ibn Zohr" class="logo-img">
+                <h2>Emploi Du Temps « Provisoire » — IAIL- S2</h2>
+            </td>
+            <td style="width: 20%;" class="year-info">
+                Année Universitaire<br>2025-2026
+            </td>
+        </tr>
+    </table>
+
+    <table class="timetable">
+        <tr>
+            <th>Jour</th> <th>9h à 10h30</th>
+            <th>10h30 à 12h</th>
+            <th>12h15 à 13h45</th>
+            <th>13h45 à 15h15</th>
+            <th>15h30 à 17h</th>
+            <th>17h à 18h30</th>
+        </tr>
+        <tr>
+            <td class="day-label">Lundi</td> 
+            <td>Prog. Python 2<br><span class="prof-name"><a href="message_prof.html">Prof M.Laraqui</a> - Amphi A</span></td>
+            <td>Algo & Prog C 2<br><span class="prof-name"><a href="message_prof.html">Prof H.Oudani</a> - Amphi A</span></td>
+            <td></td>
+            <td class="td-tp">Algo & Prog C 2<br><span class="prof-name">Td/Tp Grp1 - Salle P2</span></td>
+            <td class="td-tp">Prog. Python 2<br><span class="prof-name">Td/Tp Grp3 - Salle P2</span></td>
+            <td class="td-tp">Prog. Python 2<br><span class="prof-name">Td/Tp Grp2 - Salle P2</span></td>
+        </tr>
+        <tr>
+            <td class="day-label">Mardi</td> 
+            <td class="td-tp">Prog. Python 2<br><span class="prof-name">Td/Tp Grp 1 - Salle P2</span></td>
+            <td></td>
+            <td>Digital Skills & IA<br><span class="prof-name"><a href="message_prof.html">Prof A. Elouardi</a> - Amphi A</span></td>
+            <td>Digital Skills & IA<br><span class="prof-name">Td/Tp - Amphi A</span></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="day-label">Mercredi</td> <td></td><td></td><td></td>
+            <td class="td-tp">Algo & Prog C 2<br><span class="prof-name">Td/Tp Grp2 - Salle P2</span></td>
+            <td>Algèbre 2<br><span class="prof-name">TD - Amphi A</span></td>
+            <td>Analyse 2<br><span class="prof-name">TD - Amphi A</span></td>
+        </tr>
+        <tr>
+            <td class="day-label">Jeudi</td> 
+            <td>Traitement Signal<br><span class="prof-name"><a href="message_prof.html">Cours</a> - Amphi A</span></td>
+            <td>Traitement Signal<br><span class="prof-name">TD - Amphi A</span></td>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="day-label">Vendredi</td> 
+            <td>Algèbre 2<br><span class="prof-name">Cours - Amphi C</span></td>
+            <td>Analyse 2<br><span class="prof-name">Cours - Amphi C</span></td>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="day-label">Samedi</td>
+            <td></td><td></td><td></td>
+            <td class="td-tp">Prog. Web 1<br><span class="prof-name">Td/Tp G2 - Salle P2</span></td>
+            <td>Prog. Web 1<br><span class="prof-name"><a href="message_prof.html">Cours</a> - Salle P1</span></td>
+            <td class="td-tp">Prog. Web 1<br><span class="prof-name">Td/Tp G1 - Salle P2</span></td>
+        </tr>
+    </table>
+
+</body>
+</html>
